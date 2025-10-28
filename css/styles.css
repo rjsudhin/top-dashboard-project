@@ -1,0 +1,109 @@
+
+/* Roboto Google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --text-color: #cdd6f4;
+  --hard-color: #181825;
+  --base-bg: #9399b2;
+  --surface-color: #45475a;
+  --mauve-color: #cba6f7;
+  --teal-color: #94e2d5;
+  --pink-color: #f5c2e7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 50px;
+}
+
+
+
+html {
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--base-bg);
+  color: var(--text-color);
+}
+
+/* full container */
+.container {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(1, 2fr) repeat(1, 6fr);
+}
+/* full container */
+
+
+/* sidebar section */
+.container .sidebar {
+  grid-column: 1 / span 1;
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  gap: 3.3rem;
+  color: var(--hard-color);
+
+  .bold-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+  
+    img { /* dashboard logo */
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1rem;
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+}
+
+
+/* sidebar section */
+
+/* header section */
+.container .header {
+  grid-column: 2 / span 1;
+}
+/* header section */
+
+
+/* main section */
+.container .main {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+/* main section */
+
+
