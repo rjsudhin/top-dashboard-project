@@ -256,10 +256,18 @@ body {
         box-shadow: 1px 1px 2px 2px #2525257c;
         border-radius: .8rem;
         .doc-show {
+          color: #252525;
           border-bottom: 3px solid #2525257c;
           padding-bottom: .8rem;
           margin-bottom: .8rem;
           border-radius: .2rem;
+          .title {
+            font-size: 1.1rem;
+            font-weight: bold;
+          }
+          p {
+            font-size: 1rem;
+          }
         }
       }
     }
