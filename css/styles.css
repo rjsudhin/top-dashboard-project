@@ -212,6 +212,30 @@ body {
         min-height: 250px;
         padding: .8rem;
         border-radius: .8rem;
+        gap: 1rem;
+        position: relative;
+        color: #252525;
+        .card-title {
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+        p {
+          font-size: 1rem;
+        }
+        .side-links {
+          position: absolute;
+          bottom: 10px;
+          right: 10px;
+          img {
+            width: 20px;
+            margin: 0 5px;
+            height: auto;
+          }
+        }
+      }
+      .card:hover {
+        cursor: pointer;
+        box-shadow: 1px 1px 5px 5px var(--pink-color);
       }
     }
   }
