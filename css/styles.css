@@ -199,10 +199,8 @@ body {
   grid-template-columns: repeat(1, 3fr) repeat(1, 1fr);
 
   .left-side {
-    border: 1px solid black;
     padding: 1rem;
     .card-container {
-      /* padding: 1rem; */
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 1rem;
