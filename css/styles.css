@@ -318,6 +318,11 @@ body {
     flex-direction: column;
   }
 
+  .container .sidebar .bold-content {
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
   /* remove for hamburger menu */
   .container .sidebar .sidebar-content {
     display: none;
