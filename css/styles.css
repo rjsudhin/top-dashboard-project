@@ -403,6 +403,33 @@ body {
     }
   }
   /* header section */
+
+  /* main section */
+  .container .main {
+    display: flex;
+    flex-direction: column ;
+
+    .left-side {
+      order: 2;
+    }
+
+    .right-side {
+      order: 1;
+      .section-container {
+        display: flex;
+        background-color: yellow;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .docs-container {
+          flex: 1 1 250px;
+        }
+        .user-list-mutual {
+          flex: 1 1 250px;
+        }
+      }
+    }
+  }
+  /* main section */
 } 
 /* Smaller screens */
 
