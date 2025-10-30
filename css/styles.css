@@ -183,9 +183,12 @@ body {
       button {
         flex: 1 1 80px;
         height: 40px;
-        background-color: var(--pink-color);
+        background-color: var(--mauve-color);
         border-radius: .8rem;
         border: none;
+        font-weight: bold;
+        color: var(--base-bg-1);
+        text-shadow: 1px 1px 1px #252525;
         box-shadow: 1px 1px 2px #252525;
       }
     }
@@ -350,6 +353,56 @@ body {
     z-index: 1;
     
   }
+
+  /* header section */
+  .container .header {
+    display: flex;
+    flex-direction: column;
+    .header-notch {
+      display: flex;
+      flex-wrap: wrap;
+      .search-container {
+        flex: 1 1 350px;
+        input {
+          width: 60%;
+        }
+
+      }
+      .side-info {
+        display: flex;
+        flex: 1 1 250px;
+        justify-content: flex-end;
+        gap: 1rem;
+        padding: 0 1rem;
+        font-size: 1rem;
+        #bell-icon {
+          width: 25px;
+          height: 25px;
+        }
+        #hero-icon-1 {
+          display: none;
+        }     
+      }
+    }
+
+    .header-user-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      .user-info-container {
+        flex: 1 1 350px;
+      }
+      .user-actions-container {
+        flex: 1 1 250px;
+        flex-wrap: wrap;
+        button {
+          min-width: 110px;
+          
+        }
+      }
+    }
+  }
+  /* header section */
 } 
 /* Smaller screens */
 
